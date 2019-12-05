@@ -15,7 +15,8 @@
 		<h1>Random Domain Generator</h1>
 	</div>
 	<div>
-		<ol id="domainName"></ol>
+        <div id="domainName" class="card-group">
+		
 
 	</div>
 
@@ -33,7 +34,7 @@
             let adjective = ["pretty","ugly","fast", "slow"]
             let noun = ["dog","cat","auto","house"]
             let domains = [".com",".org",".gov",".edu"]
-            let verb =["running","driving","screaming","jumping"]
+           
            
             function my() {
             for(i=0; i<possessive.length; i++){
@@ -42,7 +43,7 @@
                         for(l=0; l<domains.length; l++){
                             for(m=0; m<domains.length; m++){
                              console.log(possessive[i] + adjective[j] + noun[k] + domains[l]); 
-                            document.querySelector("#domainName").innerHTML += "<li>" + possessive[i] + adjective[j] + noun[k] + domains[l]+ "</li>";
+                            document.querySelector("#domainName").innerHTML += '<div class="card">' + possessive[i] + adjective[j] + noun[k] + domains[l]+ "</div>";
                             }
                          }
                     }  
