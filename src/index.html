@@ -26,14 +26,20 @@
             let adjective = ["pretty","ugly","fast", "slow"]
             let noun = ["dog","cat","auto","house"]
             let domains = [".com",".org",".gov",".edu"]
+<<<<<<< HEAD
             
             
             function my() {
                 <!-- console.log("clicked") -->
+=======
+           
+            function my() {
+>>>>>>> a8ac56ddfb317e04604e5822b314321a7c430119
             for(i=0; i<possessive.length; i++){
                 for(j=0; j<adjective.length; j++) {
                     for(k=0; k<noun.length; k++) {
                         for(l=0; l<domains.length; l++){
+<<<<<<< HEAD
                             
                             document.querySelector('#domainName').innerHTML+= "<li>"+possessive[i]+ adjective[j]+noun[l]+domains[l] + "</li>"
                 
@@ -44,6 +50,17 @@
                 }
             }
          }   
+=======
+                            <!-- console.log(possessive[i] + adjective[j] + noun[k] + domains[l]); -->
+                            document.querySelector("#domainName").innerHTML += possessive[i] + adjective[j] + noun[k] + domains[l];
+                            }
+                         }
+                    }  
+            
+            
+            }
+            }
+>>>>>>> a8ac56ddfb317e04604e5822b314321a7c430119
         </script>
     </body>
 </html>
